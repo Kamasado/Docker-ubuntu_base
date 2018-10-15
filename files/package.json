@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "blank web",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "kamasado",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
