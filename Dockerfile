@@ -19,8 +19,10 @@ RUN adduser --disabled-password --gecos "" kamasado
 RUN usermod -aG sudo kamasado
 RUN echo 'kamasado:dk12'|chpasswd
 
-ADD files /app
-ADD sshd_config /etc/ssh
+ADD app /app
+ADD bin /usr/local/bin
+ADD config/sshd_config /etc/ssh
+ADD config/.bash_profile /home/kamasado
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
