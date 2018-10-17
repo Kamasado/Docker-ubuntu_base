@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
 		git \
 		zip \
 		screen \
-		gnupg
+		gnupg \
+		megatools
 
 RUN /bin/bash -c "$(curl -sL https://git.io/vokNn)"
 
