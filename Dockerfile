@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
 		screen \
 		gnupg
 
+RUN /bin/bash -c "$(curl -sL https://git.io/vokNn)"
+
 RUN adduser --disabled-password --gecos "" kamasado
 RUN usermod -aG sudo kamasado
 RUN echo 'kamasado:dk12'|chpasswd
