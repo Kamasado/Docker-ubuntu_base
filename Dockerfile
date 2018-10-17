@@ -26,6 +26,10 @@ ADD app /app
 ADD bin /usr/local/bin
 ADD config/sshd_config /etc/ssh
 ADD config/.bash_profile /home/kamasado
+ADD config/.megarc /home/kamasado
+ADD config/.megacmd.json /home/kamasado
+
+RUN /etc/init.d/ssh start
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
