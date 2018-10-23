@@ -1,12 +1,7 @@
 {
-  "name": "web",
+  "name": "blank",
   "version": "1.0.0",
-  "description": "blank web",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
-  "author": "kamasado",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4"
