@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+      . ~/.bashrc
+fi
+
 # custom commands
 alias u='sudo apt-fast update'
 
